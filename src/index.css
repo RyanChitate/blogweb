@@ -11,3 +11,49 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+header {
+  background-color: #000000;
+  color: white;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* max-width: 960px; */
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    auto
+  ); /* Adjust the number of columns as needed */
+  gap: 0px; /* Adjust the gap between items as needed */
+}
+
+nav li {
+  font-size: larger;
+  text-align: left;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 15px;
+  border-radius: 1px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #ffffff; /* Adjust the background color on hover as needed */
+  color: #000000;
+}
