@@ -17,7 +17,7 @@
 .octagon {
   width: 80%;
   padding-top: 25%; /* Adjust the value to change the height of the octagon */
-  background: #3498db;
+  background: #1a1a1a;
   position: relative;
   clip-path: polygon(10% 0%, 90% 0%, 100% 25%, 100% 75%, 90% 100%, 10% 100%, 0% 75%, 0% 25%);
   display: flex;
@@ -29,13 +29,13 @@
 
 .inner-octagon {
   width: 35%; /* Slightly smaller than the main octagon */
-  height: 50%;
+  height: 100%;
   padding-top: 18%; /* Adjust this value for symmetry */
   background: white;
   position: absolute;
   top: 0;
   right: 0; /* Position in the top-right corner */
-  clip-path: polygon(25% 0%, 90% 0%, 100% 25%, 100% 85%, 90% 100%, 25% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(25% 0%, 90% 0%, 100% 25%, 100% 75%, 90% 100%, 15% 100%, 0% 75%, 0% 25%);
   display: flex;
   justify-content: center;
   background-image: url('/src/assets/python.png'); 
@@ -43,4 +43,9 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.content {
+  left: 2300%;
+
 }

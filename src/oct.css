@@ -1,0 +1,89 @@
+/* src/OctagonWithImage.css */
+
+.octagon-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -15%; /* adjust space between cards */
+  /* opacity: 80%; */
+}
+
+.octagon {
+  /* opacity: 70%; */
+  width: 80%;
+  padding-top: 25%; /* Adjust the value to change the height of the octagon */
+  background: #000000; /*original bg*/
+  /* background: #7a7a7a; */
+  position: relative;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 25%, 100% 75%, 90% 100%, 10% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 0%; /* Adjust the margin to control vertical spacing */
+
+}
+
+/* Remove this class to go back to noraml non-business cards */
+.octagon::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  /* background: white; Set the border color to white */
+  position: absolute;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 25%, 100% 75%, 90% 100%, 10% 100%, 0% 75%, 0% 25%);
+  z-index: -1; /* Place this element behind the main octagon */
+  
+}
+
+.inner-octagon {
+  width: 35%; /* Slightly smaller than the main octagon */
+  height: 100%;
+  padding-top: 18%; /* Adjust this value for symmetry */
+  background: rgb(0, 0, 0);
+  position: absolute;
+  top: 0;
+  right: 0;
+  clip-path: polygon(25% 0%, 90% 0%, 100% 25%, 100% 85%, 90% 100%, 25% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./assets/brightPython.jpg'); /* Set your image path here */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+/* Style for the octagon content (title, description, author) */
+.octagon-content {
+  position: absolute;
+  top: -5%; /* Adjust top position for the title */
+  left: 10%; /* Adjust left position for the content */
+  display: flex; /* Make content inline */
+  flex-direction:column; /* Stack content vertically */
+  color: white; /* Text color */
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 36%;
+}
+
+.descriptionTitle {
+  margin-top: -10%;
+}
+
+.descriptionText {
+ margin-top: -5%;
+}
+
+
+.author {
+  margin-top: 140%;  /* Add margin for spacing */
+  /* color: #181818; */
+  
+}
