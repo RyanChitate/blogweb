@@ -50,7 +50,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('./assets/brightPython.jpg'); /* Set your image path here */
+  background-image: url('../assets/brightPython.jpg'); /* Set your image path here */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

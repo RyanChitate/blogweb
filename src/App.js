@@ -1,5 +1,5 @@
 import React from 'react';
-import OctagonWithImage from './oct';
+import OctagonWithImage from './components/oct';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
